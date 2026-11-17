@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questão 12 - Eventos de formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="form-cadastro" novalidate>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" placeholder="Digite seu e-mail">
+
+    <label for="comentario">Comentário (máximo 140 caracteres):</label>
+    <textarea id="comentario" rows="4" placeholder="Escreva seu comentário..."></textarea>
+    <p id="contador">0/140</p>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <p id="mensagem"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

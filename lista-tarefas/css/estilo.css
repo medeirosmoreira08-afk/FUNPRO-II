@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.marca img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.marca h1 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 600;
+}
+
+nav a.ativo,
+nav a:hover {
+  color: #2563eb;
+}
+
+.entrada-tarefa {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+#nova-tarefa {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+#btn-adicionar {
+  padding: 10px 18px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#btn-adicionar:hover {
+  background-color: #1d4ed8;
+}
+
+#contador {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 16px;
+}
+
+#lista-tarefas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista-tarefas li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#lista-tarefas li.concluida {
+  text-decoration: line-through;
+  color: #94a3b8;
+  background-color: #f1f5f9;
+}
+
+.btn-remover {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-remover:hover {
+  background-color: #dc2626;
+}

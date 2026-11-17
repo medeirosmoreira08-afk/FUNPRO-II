@@ -1,0 +1,52 @@
+#coordenadas {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  background-color: #1e293b;
+  color: #f8fafc;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+#lista-itens {
+  list-style: none;
+  padding: 0;
+  max-width: 320px;
+}
+
+#lista-itens li {
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.riscado {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+#caixa-arrastavel {
+  width: 110px;
+  height: 110px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  position: absolute;
+  top: 290px;
+  left: 20px;
+  cursor: grab;
+  user-select: none;
+}
+
+#caixa-arrastavel:active {
+  cursor: grabbing;
+}
